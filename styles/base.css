@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto&display=swap");
+
+:root {
+  --lightGreen: #ddfbd2;
+  --darkBlue: #6b7fd7;
+  --lightBlue: #bcedf6;
+  --darkPurple: #320e3b;
+  --lightPurple: #4c2a85;
+  --white: #ffffff;
+  --black: #000000;
+
+  --borderRadius: 20px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--darkPurple);
+  background: var(--lightGreen);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 52px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--darkPurple);
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1120px;
+}
+
+.purple-link {
+  display: inline-block;
+  color: var(--white);
+  background: var(--darkPurple);
+  border-radius: var(--borderRadius);
+  padding: 8px 16px;
+}
