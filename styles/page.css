@@ -1,20 +1,29 @@
+.page-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  height: 88px;
+  min-height: 88px;
   width: 100%;
   padding: 0 29px;
   font-weight: bold;
+  background: var(--lightGreen);
 }
 
 .logos {
   display: flex;
-  justify-self: left;
+  justify-self: center;
   align-items: center;
 }
 .logo {
@@ -40,7 +49,7 @@ nav {
 .register {
   display: flex;
   align-items: center;
-  justify-self: right;
+  justify-self: center;
 }
 
 .logos > *,
@@ -48,6 +57,9 @@ nav {
   margin: 0 12px;
 }
 
+.nav-links {
+  justify-self: center;
+}
 .nav-links a {
   margin: 0 16px;
 }
@@ -58,15 +70,54 @@ header {
 }
 header section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  height: 911px;
-  margin: 0 auto;
+  text-align: center;
 }
 header img {
   width: 100%;
 }
 header p {
   margin-bottom: 50px;
+}
+
+/* Breakpoints */
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .logos {
+    justify-self: left;
+  }
+
+  .register {
+    justify-self: right;
+  }
+
+  header section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 911px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }
